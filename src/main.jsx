@@ -21,7 +21,7 @@ const Main = () => {
         <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold"  onClick={() => scollToRef.current.scrollIntoView({behavior: "smooth"})}>CONTACT</Text>
         <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={() => scoll.current.scrollIntoView({behavior: "smooth"})}>PROJECTS</Text>
         <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={() => exp.current.scrollIntoView({behavior: "smooth"})}>SKILLS</Text>
-        <Button bgColor="#0c141b" color="white" fontSize={["2xs","medium","large"]} mt="-14px">
+        <Button h="50px" ml="10px" mr="10px" bgColor="#0c141b" color="white" fontSize={["2xs","medium","large"]} mt="-14px">
             <a href={Resume} download> ⇩ Get CV</a>
         </Button>
         </Box>
