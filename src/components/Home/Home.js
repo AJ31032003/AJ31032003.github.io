@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { AiOutlineDownload } from "react-icons/ai";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import pdf from "../../Assets/Arihant_Jain_Resume.pdf";
 
 function Home() {
   return (
@@ -38,6 +40,15 @@ function Home() {
                 style={{ maxHeight: "450px" }}
               />
             </Col>
+            <a href={pdf} download>
+          <Button
+            variant="primary"
+            style={{ maxWidth: "250px" }}
+            >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+            </a>
           </Row>
         </Container>
       </Container>
