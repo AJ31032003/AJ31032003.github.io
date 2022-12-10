@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.ecb5e85b.js",
+    "main.css": "/static/css/main.99991d8a.css",
+    "main.js": "/static/js/main.9841feff.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/123.png": "/static/media/123.e690cd97205967d4b254.png",
+    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/Arihant_Jain_Resume.pdf": "/static/media/Arihant_Jain_Resume.0293b844659c8dbec9fb.pdf",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/Logo.png": "/static/media/Logo.a94b4464ccf9ac7f5916.png",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.ecb5e85b.js.map": "/static/js/main.ecb5e85b.js.map",
+    "main.99991d8a.css.map": "/static/css/main.99991d8a.css.map",
+    "main.9841feff.js.map": "/static/js/main.9841feff.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.ecb5e85b.js"
+    "static/css/main.99991d8a.css",
+    "static/js/main.9841feff.js"
   ]
 }
