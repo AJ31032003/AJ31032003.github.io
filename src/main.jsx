@@ -15,12 +15,12 @@ const Main = () => {
     <Box color="white" backgroundImage="linear-gradient(to right, #434343 0%, black 100%)" w={["100%","100%", "100%"]}>
     <Box id="nav" display="flex" bgColor="#0c141b" color="white" position="sticky" w={["100%","100%", "100%"]}>
         <Box display="flex" justifyContent="space-evenly" w={["100%","100%", "100%"]} paddingTop="10px">
-        <Text fontSize={["10","medium","large"]} fontFamily="italics" fontWeight="bold" ml="10px">Arihant Jain</Text>
-        <Text fontSize={["10","medium","large"]} cursor="pointer" fontWeight="bold" onClick={() => scollTo.current.scrollIntoView({behavior: "smooth"})}>HOME</Text>
-        <Text fontSize={["10","medium","large"]} cursor="pointer" fontWeight="bold" onClick={()=>abt.current.scrollIntoView({behavior: "smooth"})}>ABOUT</Text>
-        <Text fontSize={["10","medium","large"]} cursor="pointer" fontWeight="bold"  onClick={() => scollToRef.current.scrollIntoView({behavior: "smooth"})}>CONTACT</Text>
-        <Text fontSize={["10","medium","large"]} cursor="pointer" fontWeight="bold" onClick={() => scoll.current.scrollIntoView({behavior: "smooth"})}>PROJECTS</Text>
-        <Text fontSize={["10","medium","large"]} cursor="pointer" fontWeight="bold" onClick={() => exp.current.scrollIntoView({behavior: "smooth"})}>SKILLS</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" fontFamily="italics" fontWeight="bold">Arihant Jain</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={() => scollTo.current.scrollIntoView({behavior: "smooth"})}>HOME</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={()=>abt.current.scrollIntoView({behavior: "smooth"})}>ABOUT</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold"  onClick={() => scollToRef.current.scrollIntoView({behavior: "smooth"})}>CONTACT</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={() => scoll.current.scrollIntoView({behavior: "smooth"})}>PROJECTS</Text>
+        <Text fontSize={["10","15","large"]} ml="10px" cursor="pointer" fontWeight="bold" onClick={() => exp.current.scrollIntoView({behavior: "smooth"})}>SKILLS</Text>
         <Button bgColor="#0c141b" color="white" fontSize={["2xs","medium","large"]} mt="-14px">
             <a href={Resume} download> ⇩ Get CV</a>
         </Button>
