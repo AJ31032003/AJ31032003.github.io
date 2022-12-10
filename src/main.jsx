@@ -53,7 +53,7 @@ const Main = () => {
         </Button>
     </Box>
     <Box mt="20px" ref={scollToRef}>
-        <Text color="white" fontSize={35} textAlign="center" >
+        <Text color="white" fontSize={35} textAlign="center" fontFamily="italics">
             Contact Me:
         </Text>
         <Box ml="10">
