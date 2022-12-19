@@ -5,14 +5,14 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/Logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import pdf from "../Assets/Arihant_Jain_Resume.pdf"
+
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -63,7 +63,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About Me
               </Nav.Link>
             </Nav.Item>
 
@@ -79,26 +79,14 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
             <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/AJ31032003/AJ31032003.github.io"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
+              <a href={pdf} download>
+              <Button className="fork-btn-inner">
+                  <AiFillStar style={{ fontSize: "1.2em" }} />{" "}
+                 Download Resume
+                </Button>
+                </a>
+              </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

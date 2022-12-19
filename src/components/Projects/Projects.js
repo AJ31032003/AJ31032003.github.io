@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import Mean from "../../Assets/Capture2.PNG"
+import Nauk from "../../Assets/Capture.PNG"
 
 function Projects() {
   return (
@@ -9,7 +11,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -17,6 +19,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              src={Mean}
               isBlog={false}
               single={true}
               title="Meanbuy"
@@ -28,6 +31,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              src={Nauk}
               isBlog={false}
               single={false}
               title="Naukri.com"

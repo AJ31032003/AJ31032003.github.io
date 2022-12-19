@@ -8,6 +8,7 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Body>
+        <img src={props.src} width="100%" alt={props.title}/>
         <Card.Title>{props.title} ({props.single?"Individual":"Collaborative"})</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
