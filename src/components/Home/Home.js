@@ -1,60 +1,55 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { AiOutlineDownload } from "react-icons/ai";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
-import pdf from "../../Assets/Arihant_Jain_Resume.pdf";
+import { Container, Row, Col } from "react-bootstrap";
+import profile from "../../Assets/Profile.png";
+import ContectLogo from "./ContectLogo";
+
 
 function Home() {
   return (
-    <section>
+    <section id="scrollHome" className="activeNavlink">
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h6 className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </h6>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> ARIHANT JAIN</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
+              <h6 className="heading-name">
+                I am
+                <strong className="main-name"> Arihant Jain</strong>
+              </h6>
+              <h6 className="sub-heading-name">
+                <strong>FULL STACK WEB DEVELOPER</strong>
+              </h6>
+              <h4 className="sub-heading-name">
+                From
+                <strong className="main-name"> Rohini, Delhi</strong>
+              </h4>
+              
+              <ContectLogo />
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col
+              className="my-img-home-div"
+              md={5}
+              style={{ paddingBottom: 15 }}
+            >
+            
               <img
-                src={homeLogo}
+                style={{ border:"1px solid black",width: "70%", borderRadius:"10%"}}
+                src={profile}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="img-fluid my-img-home"
               />
             </Col>
-            <a href={pdf} download>
-          <Button
-            variant="primary"
-            style={{ maxWidth: "250px" }}
-            >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-            </a>
           </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }
-
 export default Home;

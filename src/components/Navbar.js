@@ -3,21 +3,15 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Logo.png";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import pdf from "../Assets/Arihant_Jain_Resume.pdf"
-
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
+  const scrollToFunction = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    updateExpanded(false);
+  };
+  
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -25,6 +19,19 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+
+  const li = document.querySelectorAll(".nav-link");
+  const section = document.querySelectorAll(".activeNavlink");
+  function acvtiveMenu() {
+    let len = section.length;
+    for (let i = 0; i < len; i++) {
+      let sectionTop = section[i].offsetTop;
+      let sectionHeight = section[i].offsetHeight;
+      let variableHeight = sectionHeight / 4;
+    }
+  }
+  acvtiveMenu();
+  window.addEventListener("scroll", acvtiveMenu);
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -36,7 +43,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href="/">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -50,43 +57,74 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link
+                // as={Link}
+                // to="/"
+                onClick={() => scrollToFunction("scrollHome")}
+              >
+                {/* <span style={pathname === "/" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Home</span> */}
+                <span>Home</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+                // as={Link}
+                // to="/about"
+                onClick={() => scrollToFunction("scrollAbout")}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About Me
+                {/* <span style={pathname === "/about" ? { color: "#0095ff", fontWeight: "bold" } : {}}>About</span> */}
+                <span>About</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+                // as={Link}
+                // to="/skill"
+                onClick={() => scrollToFunction("scrollSkills")}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                {/* <span style={pathname === "/skill" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Skills</span> */}
+                <span>Skills</span>
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className="fork-btn">
-              <a href={pdf} download>
-              <Button className="fork-btn-inner">
-                  <AiFillStar style={{ fontSize: "1.2em" }} />{" "}
-                 Download Resume
-                </Button>
-                </a>
-              </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                // as={Link}
+                // to="/project"
+                onClick={() => scrollToFunction("scrollProjects")}
+              >
+                {/* <span style={pathname === "/project" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Projects</span> */}
+                <span>Projects</span>
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                // as={Link}
+                // to="/resume"
+                onClick={() => scrollToFunction("scrollResume")}
+              >
+                {/* <span style={pathname === "/resume" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Resume</span> */}
+                <span>Resume</span>
+              </Nav.Link>
+            </Nav.Item>
+
+           
+
+            <Nav.Item>
+              <Nav.Link
+                // as={Link}
+                // to="/contact"
+                onClick={() => scrollToFunction("scrollContact")}
+              >
+                {/* <span style={pathname === "/contact" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Contact</span> */}
+                <span>Contact</span>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

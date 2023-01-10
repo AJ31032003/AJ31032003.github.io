@@ -7,7 +7,7 @@ import {
   DiNodejs,
 } from "react-icons/di";
 import {
-  SiNextdotjs,
+  SiNextdotjs,SiExpress,SiMongodb,SiFirebase
 } from "react-icons/si";
 import {IoLogoCss3} from "react-icons/io"
 
@@ -30,6 +30,16 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <IoLogoCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        
+      <SiFirebase />
       </Col>
     </Row>
   );
