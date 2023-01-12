@@ -147,27 +147,29 @@ html {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 820px) {
   .navbar {
     padding: 1rem !important;
     font-size: 1.4rem !important;
     background-color: #270123 !important;
   }
-
+  
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 
 .navbar-brand {
+  margin-left: -200px;
   color: rgb(250, 250, 250) !important;
   padding-left: 1rem !important;
 }
 
 .logo {
   height: 2.5em !important;
-  margin-right: 150px;
-  position: relative;
+  margin-left: 110px;
+  margin-right: 20px;
+  position: sticky;
   bottom: 5px;
 }
 
@@ -186,6 +188,7 @@ html {
     padding: 0.7rem 1rem !important;
   }
 }
+
 
 .navbar-nav .nav-item {
   position: relative;
@@ -214,6 +217,7 @@ html {
 }
 
 .navbar-nav .nav-item a:hover::after {
+  
   width: 100%;
 }
 

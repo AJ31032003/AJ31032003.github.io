@@ -64,7 +64,7 @@ function Projects() {
                 tool="React,Chakra-UI, Javascript"
                 description="Nykaa is an Indian e-commerce company, founded by Falguni Nayar in 2012 and headquartered in Mumbai. It sells beauty, wellness and fashion products across websites, mobile apps and 100+ offline stores.In 2020, it became the first Indian unicorn startup headed by a woman."
                 link="https://github.com/arpitmiahra4/amazing-pocket-7061"
-                demoLink="https://63ada1475ad13e35586e0a54--ornate-cupcake-fb26b5.netlify.app/"
+                demoLink="https://63bfed597aacf001e8b9caf6--ornate-cupcake-fb26b5.netlify.app/"
               />
             </Col>
           </Row>
