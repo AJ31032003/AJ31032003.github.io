@@ -160,7 +160,7 @@ html {
 }
 
 .navbar-brand {
-  margin-left: -200px;
+  margin-left: -175px;
   color: rgb(250, 250, 250) !important;
   padding-left: 1rem !important;
 }
@@ -187,6 +187,10 @@ html {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+  .navbar-brand {
+    margin-left: -235px;
+  }
+
 }
 
 

@@ -13,7 +13,7 @@ function Resume() {
           <Row style={{ justifyContent: "center", position: "relative" }}>
             <a href={pdf} download>
             <Button variant="primary">
-              <AiOutlineDownload />Download CV
+              <AiOutlineDownload />Download Resume
             </Button>
             </a>
           </Row>

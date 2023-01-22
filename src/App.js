@@ -31,11 +31,11 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Resume />
         <Skill />
         <Projects />
         <Calendar/>
         <Stats/>
-        <Resume />
         <Contact />
       </div>
     </Router>

@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Logo.png";
+import pdf from "../Assets/Arihant_Jain_Resume.pdf"
+import { NavLink } from "react-bootstrap";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -60,68 +62,44 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link
-                // as={Link}
-                // to="/"
                 onClick={() => scrollToFunction("scrollHome")}
               >
-                {/* <span style={pathname === "/" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Home</span> */}
                 <span>Home</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                // as={Link}
-                // to="/about"
                 onClick={() => scrollToFunction("scrollAbout")}
               >
-                {/* <span style={pathname === "/about" ? { color: "#0095ff", fontWeight: "bold" } : {}}>About</span> */}
                 <span>About</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                // as={Link}
-                // to="/skill"
                 onClick={() => scrollToFunction("scrollSkills")}
               >
-                {/* <span style={pathname === "/skill" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Skills</span> */}
                 <span>Skills</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                // as={Link}
-                // to="/project"
-                onClick={() => scrollToFunction("scrollProjects")}
-              >
-                {/* <span style={pathname === "/project" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Projects</span> */}
+                onClick={() => scrollToFunction("scrollProjects")}>
                 <span>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                // as={Link}
-                // to="/resume"
-                onClick={() => scrollToFunction("scrollResume")}
-              >
-                {/* <span style={pathname === "/resume" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Resume</span> */}
-                <span>Resume</span>
-              </Nav.Link>
+              <NavLink href={pdf} download>
+                  <span>Resume</span>
+              </NavLink>
             </Nav.Item>
-
-           
-
             <Nav.Item>
               <Nav.Link
-                // as={Link}
-                // to="/contact"
                 onClick={() => scrollToFunction("scrollContact")}
               >
-                {/* <span style={pathname === "/contact" ? { color: "#0095ff", fontWeight: "bold" } : {}}>Contact</span> */}
                 <span>Contact</span>
               </Nav.Link>
             </Nav.Item>
