@@ -5,6 +5,7 @@ import naukri from "../../Assets/Projects/Capture.PNG";
 import apple from "../../Assets/Projects/Capture3.PNG";
  import meanbuy from "../../Assets/Projects/Capture2.PNG";
  import Nykaa from "../../Assets/Projects/Capture4.PNG";
+ import Abof from "../../Assets/Projects/Capture5.PNG"
 
 function Projects() {
   return (
@@ -18,6 +19,18 @@ function Projects() {
             Here are a few projects I've worked on recently.
           </p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={6} className="project-card">
+              <ProjectCard
+                imgPath={Abof}
+                isBlog={false}
+                single={false}
+                title="Abof.com"
+                tool="Express,MongoDB, React, Chakra-UI, Javascript"
+                description="It a sister concern of Aditya Birla Group of India which serves as an online retail store. It is an e-commerce website for clothes."
+                link="https://github.com/AJ31032003/Abof"
+                demoLink="https://adof-aj31032003.vercel.app/"
+              />
+            </Col>
             <Col md={6} className="project-card">
               <ProjectCard
                 imgPath={meanbuy}

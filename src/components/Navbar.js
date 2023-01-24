@@ -92,7 +92,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <NavLink href={pdf} download>
+              <NavLink href={pdf} download onClick={() => { window.open("https://drive.google.com/file/d/1lfLWBNj62-WvpHm6HpbukozLiThKXmgX/view", "_blank");}}>
                   <span>Resume</span>
               </NavLink>
             </Nav.Item>
