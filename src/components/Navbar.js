@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Logo.png";
-import pdf from "../Assets/Arihant_Jain_Resume.pdf"
+import pdf from "../Assets/fp06_169-Arihant-Jain-Resume.pdf"
 import { NavLink } from "react-bootstrap";
 
 function NavBar() {

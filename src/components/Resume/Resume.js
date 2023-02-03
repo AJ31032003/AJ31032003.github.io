@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Resumecontent from "./ResumeContent";
-import pdf from "../../Assets/Arihant_Jain_Resume.pdf";
+import pdf from "../../Assets/fp06_169-Arihant-Jain-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
