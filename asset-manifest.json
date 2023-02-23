@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.62f47aea.css",
-    "main.js": "/static/js/main.97fb1913.js",
+    "main.js": "/static/js/main.30b95084.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Capture5.PNG": "/static/media/Capture5.74da077192f8dd0ea9fe.PNG",
     "static/media/Capture3.PNG": "/static/media/Capture3.773a1b1255c213c4054b.PNG",
     "static/media/Capture2.PNG": "/static/media/Capture2.53b1a3f7437a9195edd1.PNG",
     "static/media/Capture4.PNG": "/static/media/Capture4.dc3460d75012f181727c.PNG",
-    "static/media/fp06_169-Arihant-Jain-Resume.pdf": "/static/media/fp06_169-Arihant-Jain-Resume.7bce8e2900a34c780ca9.pdf",
+    "static/media/fp06_169-Arihant-Jain-Resume.pdf": "/static/media/fp06_169-Arihant-Jain-Resume.b2a5b87c91f4a59fd9ef.pdf",
     "static/media/mail.jpg": "/static/media/mail.6a7cd9d34a24e151d730.jpg",
     "static/media/Profile.png": "/static/media/Profile.7c84988e2dd02cc95ec8.png",
     "static/media/Capture.PNG": "/static/media/Capture.a8fddc9c2cacb52984c7.PNG",
@@ -19,11 +19,11 @@
     "static/media/about-bg.svg": "/static/media/about-bg.fc32ab7c501be4f13773.svg",
     "index.html": "/index.html",
     "main.62f47aea.css.map": "/static/css/main.62f47aea.css.map",
-    "main.97fb1913.js.map": "/static/js/main.97fb1913.js.map",
+    "main.30b95084.js.map": "/static/js/main.30b95084.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62f47aea.css",
-    "static/js/main.97fb1913.js"
+    "static/js/main.30b95084.js"
   ]
 }
