@@ -40,7 +40,7 @@ function Projects() {
                 tool=" React, Chakra-UI, Javascript"
                 description="MeanBuy was originally founded as a cross border B2C e-commerce platform, . It primarily focuses on bringing transparency to customers ordering directly from wholesalers or manufacturers. By offering flexible pricing around future delivery dates."
                 link="https://github.com/AJ31032003/-evil-jellyfish-2990/tree/main/meanbuy"
-                demoLink="https://lustrous-malabi-7c7fc6.netlify.app/"
+                demoLink="https://meanbuy-beta.vercel.app/"
               />
             </Col>
             <Col md={6} className="project-card">
